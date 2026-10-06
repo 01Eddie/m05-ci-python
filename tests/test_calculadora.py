@@ -54,3 +54,8 @@ class TestDividir:
     def test_division_por_cero_lanza_excepcion(self):
         with pytest.raises(ValueError, match="No se puede dividir entre cero"):
             dividir(5, 0)
+
+# ── Tests de potencia ──────────────────────────────────────────
+class TestPotencia:
+    def test_division_simple(self):
+        assert potencia(2, 4) == 16
